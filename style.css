@@ -30,6 +30,20 @@ li {
   list-style-type: none;
 }
 
+a:link {
+  color: #AD4F7E;
+  text-decoration: none;
+  text-decoration: wavy underline lime;
+}
+
+a:visited {
+  color: #734C9F;
+}
+
+a:hover {
+  color: #AD4F7E; font-size: 130%;
+}
+
 .profilepic {
   width:300px;
   height:300px;
