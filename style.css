@@ -1,14 +1,14 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
   margin: 2em;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
-  justify-content: center;
+    font-family: 'Potta One', cursive;
+    font-size: 2rem;
+    text-align: center;
 }
 
 ul {
@@ -22,19 +22,60 @@ ul {
   justify-content: center;
   background-color: white;
   position: fixed;
+  }
+
+li {
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style-type: none;
 }
 
 .profilepic {
-  width:400px;
-  height:400px;
+  width:300px;
+  height:300px;
   border-radius: 10px;
-  overflow: hidden;
+  margin: 1;
+}
+
+.swift {
+  border-radius: 20px;
+}
+
+.linkedsite {
+  font-size: 150%;
+  text-align: center;
+  font-family: 'Potta One', cursive;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #F7F497  50%);
+  justify-content: center;
+}
+
+.news1 {
+  border-radius: 10px;
+  width:310px;
+  height:310px;
+}
+
+@media only screen and (min-width: 768px) {
+.passionpic {
+  width:700px;
+  height:500px;
+  border-radius: 10px;
+}
+}
+
+.wordmap {
+  width:350px;
+  height:250px;
 }
 
 .project1{
 }
 
 .project2{
+}
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
 }
 
 
@@ -44,8 +85,7 @@ ul {
 }
 
 .highlight2{
-  border:2px dashed #0053C7;  
-  padding:0.03em 0.25em;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #A8D0D4 50%);
 }
 
 .row{
@@ -56,18 +96,26 @@ ul {
   justify-content: center;
 }
 
-.col-1 {flex-basis: 8.33%;} /* width works too */
-.col-2 {flex-basis: 16.66%;}
-.col-3 {flex-basis: 25%;}
-.col-4 {flex-basis: 33.33%;}
-.col-5 {flex-basis: 41.66%;}
-.col-6 {flex-basis: 50%;}
-.col-7 {flex-basis: 58.33%;}
-.col-8 {flex-basis: 66.66%;}
-.col-9 {flex-basis: 75%;}
-.col-10 {flex-basis: 83.33%;}
-.col-11 {flex-basis: 91.66%;}
-.col-12 {flex-basis: 100%;}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {flex-basis: 8.33%;} /* width works too */
+  .col-2 {flex-basis: 16.66%;}
+  .col-3 {flex-basis: 25%;}
+  .col-4 {flex-basis: 33.33%;}
+  .col-5 {flex-basis: 41.66%;}
+  .col-6 {flex-basis: 50%;}
+  .col-7 {flex-basis: 58.33%;}
+  .col-8 {flex-basis: 66.66%;}
+  .col-9 {flex-basis: 75%;}
+  .col-10 {flex-basis: 83.33%;}
+  .col-11 {flex-basis: 91.66%;}
+  .col-12 {flex-basis: 100%;}
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
 .container {
   max-width: 1024px;
